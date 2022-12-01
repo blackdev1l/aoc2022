@@ -1,7 +1,5 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val day01 = Day01()
+    println(day01.part1(Utils.readInput(1).toString()))
+    println(day01.part2(Utils.readInput(1).toString()))
 }
