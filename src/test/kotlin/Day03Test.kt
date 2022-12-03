@@ -12,7 +12,7 @@ internal class Day03Test {
 
     @Test
     fun splitRuckSack() {
-        val splitRuckSack = d.splitRuckSack("vJrwpWtwJgWrhcsFMMfFFhFp")
+        val splitRuckSack = ("vJrwpWtwJgWrhcsFMMfFFhFp").chunked("vJrwpWtwJgWrhcsFMMfFFhFp".length / 2)
 
         assertEquals(2, splitRuckSack.size)
         assertEquals("vJrwpWtwJgWr", String(splitRuckSack[0].toCharArray()))
@@ -20,11 +20,6 @@ internal class Day03Test {
 
     }
 
-    @Test
-    fun findCommonChar() {
-        val splitRuckSack = d.splitRuckSack("vJrwpWtwJgWrhcsFMMfFFhFp")
-        assertEquals('p', d.findCommonChar(splitRuckSack))
-    }
 
     @Test
     fun getPriority() {
