@@ -18,4 +18,9 @@ internal class Day05Test {
     fun part1() {
         assertEquals("CMZ", d.part1(readInput(5)!!))
     }
+
+    @Test
+    fun part2() {
+        assertEquals("MCD", d.part2(readInput(5)!!))
+    }
 }

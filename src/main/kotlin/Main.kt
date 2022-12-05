@@ -18,5 +18,6 @@ fun main(args: Array<String>) {
 //    println(day4.part2(Utils.readInput(4).toString()))
 
     println(day5.part1(Utils.readInput(5).toString()))
-//    println(day4.part2(Utils.readInput(4).toString()))
+    println(day5.part2(Utils.readInput(5).toString()))
+
 }
