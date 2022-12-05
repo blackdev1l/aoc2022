@@ -7,15 +7,15 @@ class Day05 {
         var orders = ArrayList<Order>()
 
 
-        fun move() {
+        fun solve1() {
             for (order in this.orders) {
                 val moving = crates[order.from - 1]!!.take(order.amount)
                 crates[order.from - 1] = crates[order.from - 1]!!.drop(order.amount)
-                crates[order.to -1] =  move( crates[order.to -1]!!, moving)
+                crates[order.to -1] =  move1( crates[order.to -1]!!, moving)
             }
         }
 
-        fun move(list1: List<String>, list2: List<String>): List<String> {
+        fun move1(list1: List<String>, list2: List<String>): List<String> {
             return (list2.reversed().plus(list1))
         }
 
@@ -23,7 +23,7 @@ class Day05 {
             return (list2.plus(list1))
         }
 
-        fun move2() {
+        fun solve2() {
             for (order in this.orders) {
                 val moving = crates[order.from - 1]!!.take(order.amount)
                 crates[order.from - 1] = crates[order.from - 1]!!.drop(order.amount)
@@ -42,7 +42,7 @@ class Day05 {
 
     fun part1(input: String): String {
         val operator = parseInput(input)
-        operator?.move()
+        operator?.solve1()
         return operator.crates
             .filter{ it.value.isNotEmpty() }
             .map { it.value.first() }
@@ -51,7 +51,7 @@ class Day05 {
 
     fun part2(input: String): String {
         val operator = parseInput(input)
-        operator?.move2()
+        operator?.solve2()
         return operator.crates
             .filter{ it.value.isNotEmpty() }
             .map { it.value.first() }
