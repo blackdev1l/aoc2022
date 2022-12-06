@@ -38,3 +38,9 @@ class Day04 {
         return result.plus((i..j))
     }
 }
+
+fun main() {
+    val d = Day04()
+    println(d.part1(Utils.readInput(4)))
+    println(d.part2(Utils.readInput(4)))
+}

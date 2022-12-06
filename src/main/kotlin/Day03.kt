@@ -21,3 +21,9 @@ class Day03 {
         else Character.getNumericValue(ch) + 17
     }
 }
+
+fun main() {
+    val d = Day03()
+    println(d.part1(Utils.readInput(3)))
+    println(d.part2(Utils.readInput(3)))
+}

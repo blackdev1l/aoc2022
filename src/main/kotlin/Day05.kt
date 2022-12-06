@@ -42,7 +42,7 @@ class Day05 {
 
     fun part1(input: String): String {
         val operator = parseInput(input)
-        operator?.solve1()
+        operator.solve1()
         return operator.crates
             .filter{ it.value.isNotEmpty() }
             .map { it.value.first() }
@@ -51,7 +51,7 @@ class Day05 {
 
     fun part2(input: String): String {
         val operator = parseInput(input)
-        operator?.solve2()
+        operator.solve2()
         return operator.crates
             .filter{ it.value.isNotEmpty() }
             .map { it.value.first() }
@@ -105,4 +105,10 @@ class Day05 {
 
         return res
     }
+}
+
+fun main() {
+    val d = Day05()
+    println(d.part1(Utils.readInput(5)))
+    println(d.part2(Utils.readInput(5)))
 }

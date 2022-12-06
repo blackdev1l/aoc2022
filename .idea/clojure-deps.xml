@@ -4,7 +4,6 @@
     <option name="projectFiles">
       <set>
         <option value="file://$PROJECT_DIR$/clojure/deps.edn" />
-        <option value="file://$PROJECT_DIR$/src/main/clojure/deps.edn" />
       </set>
     </option>
   </component>

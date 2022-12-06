@@ -14,3 +14,10 @@ class Day01 {
     }
 
 }
+
+
+fun main() {
+    val d = Day01()
+    println(d.part1(Utils.readInput(1)))
+    println(d.part2(Utils.readInput(1)))
+}

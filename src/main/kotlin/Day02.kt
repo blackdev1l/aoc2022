@@ -48,3 +48,9 @@ class Day02 {
     }
 
 }
+
+fun main() {
+    val d = Day02()
+    println(d.part1(Utils.readInput(2)))
+    println(d.part2(Utils.readInput(2)))
+}

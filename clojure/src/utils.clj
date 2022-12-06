@@ -1,4 +1,5 @@
-(ns utils)
+(ns utils
+  (:require [clojure.string :as str]))
 
 
 (defn read-file
