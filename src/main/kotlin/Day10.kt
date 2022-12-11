@@ -63,18 +63,6 @@ class Day10 {
         println(res)
     }
 
-    private fun printSpritePosition(spritePosition: Int) {
-        println("=== sprite position ===")
-        for (j in 0..40) {
-            if (isInWindow(spritePosition, j))
-                print("#")
-            else
-                print("")
-        }
-        print("\n")
-        print("\n")
-    }
-
     fun isInWindow(spritePosition: Int, currentDrawing: Int): Boolean {
         return (currentDrawing == spritePosition-1) || (currentDrawing == spritePosition) || (currentDrawing == spritePosition + 1)
     }
