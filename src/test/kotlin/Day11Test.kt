@@ -22,5 +22,6 @@ internal class Day11Test {
 
     @Test
     fun part2() {
+        assertEquals(2713310158,d.part2(input).toLong())
     }
 }
